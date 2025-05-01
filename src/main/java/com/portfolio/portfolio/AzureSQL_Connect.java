@@ -12,7 +12,7 @@ public class AzureSQL_Connect {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         } catch (ClassNotFoundException e) {
-            throw new SQLException("Azure driver not found");
+            throw new SQLException("MySQL driver not found");
         }
 
         Dotenv dotenv = null;

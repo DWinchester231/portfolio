@@ -13,11 +13,11 @@
       </jdbc-additional-properties>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="azuredb@azuredblol.database.windows.net" uuid="34985e6c-edd3-440e-bdd7-64c6f7c19f4e">
+    <data-source source="LOCAL" name="azuredb@server.database.windows.net" uuid="abe38713-55e4-439e-bfdf-fffa3ab4de16">
       <driver-ref>azure.ms</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
-      <jdbc-url>jdbc:sqlserver://azuredblol.database.windows.net:1433;database=azuredb;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;</jdbc-url>
+      <jdbc-url>jdbc:sqlserver://server.database.windows.net:1433;database=jdbc:sqlserver://azuredblol.database.windows.net:1433;database=azuredb;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;</jdbc-url>
       <jdbc-additional-properties>
         <property name="com.intellij.clouds.kubernetes.db.host.port" />
         <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />
